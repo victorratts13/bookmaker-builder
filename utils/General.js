@@ -124,10 +124,175 @@ export default {
                 description: 'Primeiro gol do segundo tempo.',
                 options: ['casa', 'visitante']
             }
+        ],
+        en: [
+            {
+                "id": 1,
+                "name": "final result",
+                "description": "Final result between the home team and the visiting team.",
+                "options": [
+                    "home", "away", "draw"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "double chance",
+                "description": "Result between 2 possibility.",
+                "options": [
+                    "home-away",
+                    "draw-home",
+                    "draw-away"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Para ganhar o trofél",
+                "description": "To win the trophy",
+                "options": [
+                    "home",
+                    "away"
+                ]
+            },
+            {
+                "id": 4,
+                "name": "1st Goal",
+                "description": "Team to score the first goal of the match",
+                "options": [
+                    "home",
+                    "away"
+                ]
+            },
+            {
+                "id": 5,
+                "name": "Goals",
+                "description": "Team to score the most goals in the match",
+                "options": [
+                    "home",
+                    "away"
+                ]
+            },
+            {
+                "id": 6,
+                "name": "Goals Total",
+                "description": "Number of goals in the match.",
+                "options": [
+                    "Over",
+                    "under"
+                ]
+            },
+            {
+                "id": 7,
+                "name": "meeting - corners",
+                "description": "Encounters in corners",
+                "options": [
+                    "over",
+                    "Exactly",
+                    "under"
+                ]
+            },
+            {
+                "id": 8,
+                "name": "Handicap",
+                "description": "Calculates the handicap between two teams.",
+                "options": [
+                    "home",
+                    "away"
+                ]
+            },
+            {
+                "id": 9,
+                "name": "Asian Handicap",
+                "description": "Calculates the balance between 2 teams.",
+                "options": [
+                    "home",
+                    "away"
+                ]
+            },
+            {
+                "id": 10,
+                "name": "Correct Result",
+                "description": "Correct final result (in number of goals)",
+                "options": [
+                    "home",
+                    "away"
+                ]
+            },
+            {
+                "id": 11,
+                "name": "asian corners",
+                "description": "Number of corners based on each team's Handicap.",
+                "options": [
+                    "home",
+                    "away"
+                ]
+            },
+            {
+                "id": 12,
+                "name": "first to collect",
+                "description": "First team to take a corner kick",
+                "options": [
+                    "home",
+                    "away"
+                ]
+            },
+            {
+                "id": 13,
+                "name": "Corner kick",
+                "description": "Number of corners by each team",
+                "options": [
+                    "home",
+                    "away"
+                ]
+            },
+            {
+                "id": 14,
+                "name": "draw cancels bet",
+                "description": "If there is a draw, the result will be:",
+                "options": [
+                    "home",
+                    "away"
+                ]
+            },
+            {
+                "id": 15,
+                "name": "1st Goal (first half)",
+                "description": "First goal of the first half",
+                "options": [
+                    "home",
+                    "away"
+                ]
+            },
+            {
+                "id": 16,
+                "name": "Ultimo a marcar",
+                "description": "last to score",
+                "options": [
+                    "home",
+                    "away"
+                ]
+            },
+            {
+                "id": 17,
+                "name": "Odd/Even Goals",
+                "description": "Number of goals in odd or even",
+                "options": [
+                    "home",
+                    "away"
+                ]
+            },
+            {
+                "id": 18,
+                "name": "1st Goal (second half)",
+                "description": "First goal of the second half.",
+                "options": [
+                    "home",
+                    "away"
+                ]
+            }
         ]
     },
 
-    calcTotal: function(arr = []){
+    calcTotal: function (arr = []) {
         return arr.reduce((arr, i) => {
             return arr + i;
         });
