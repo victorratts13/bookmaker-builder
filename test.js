@@ -59,5 +59,5 @@ const book = new BookMaker({
         }
     ];
     var odds = book.OddBuilder('Resultado final', MarkInfo);
-    console.log(odds.data.result);
+    console.log(JSON.stringify(odds));
 })();
